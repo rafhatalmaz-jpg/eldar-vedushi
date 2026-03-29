@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ведущий Эльдар</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #000000; /* чёрный фон */
+      color: #ffffff; /* белый текст */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Заголовок справа */
+    .header {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      padding: 100px 20px 20px 20px; /* отступ сверху чтобы не перекрывало header */
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 60px;
+    }
+
+    .photo-top-left {
+      width: 250px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .block-two {
+      display: flex;
+      align-items: flex-start;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .block-two-text {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.8;
+    }
+
+    .block-two-photo {
+      width: 250px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .block-three {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .block-three-photo {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        font-size: 24px;
+      }
+      .photo-top-left,
+      .block-two-photo,
+      .block-three-photo {
+        width: 200px;
+      }
+      .block-two-text,
+      .block-three {
+        font-size: 18px;
+      }
+      .block-two {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Заголовок справа -->
+  <div class="header">Ведущий Эльдар</div>
+
+  <div class="container">
+
+    <!-- Фото под заголовком слева -->
+    <img src="https://www.instagram.com/p/C29IElQtwhj/?igsh=MTljOXJyaG5mcmxrYQ==" alt="Фото 1" class="photo-top-left">
+
+    <!-- Второй блок: текст и фото справа -->
+    <div class="block-two">
+      <div class="block-two-text">
+        1. Свадьбы<br>
+        2. Мероприятия<br>
+        3. Презентации<br>
+        4. Дни рождения | юбилей<br>
+        5. Тимбилдинги
+      </div>
+      <img src="https://www.instagram.com/p/CyYinsutxEC/?igsh=MWtyeXB5YjVjNm0yOQ==" alt="Фото 2" class="block-two-photo">
+    </div>
+
+    <!-- Третий блок: текст + фото -->
+    <div class="block-three">
+      <div>Более 10 лет опыта работы с многими клиентами</div>
+      <img src="https://www.instagram.com/p/C9ett34tTqz/?igsh=MThkbnMyNW1zeHhybw==" alt="Фото 3" class="block-three-photo">
+    </div>
+
+  </div>
+
+</body>
+</html>
